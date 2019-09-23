@@ -1,0 +1,12 @@
+server: 
+  port: 6870
+spring: 
+  application:  
+    name: study-web #指定服务名
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-address: true

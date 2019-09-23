@@ -1,0 +1,19 @@
+server: 
+  port: 6869
+spring: 
+  application:  
+    name: study-service #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/linuxjenkins?characterEncoding=UTF8
+    username: root
+    password: 123456
+  jpa: 
+    database: MySQL
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.137.2:6868/eureka/
+  instance:
+    prefer-ip-address: true
